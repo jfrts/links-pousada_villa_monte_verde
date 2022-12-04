@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WBZ3N27');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pousada Villa Monte Verde</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Oxygen:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Google tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-250279573-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-250279573-1');
+  </script>
+</head>
+
+<body class="container">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBZ3N27" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <img src="./assets/logo.webp" alt="Pousada Villa Monte Verde">
+  </header>
+  <main>
+    <ul class="links-list">
+      <li>
+        <a target="_blank" id="booking_url">Reservas</a>
+      </li>
+
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/" target="_blank">Site</a>
+      </li>
+
+      <li>
+        <a href="https://api.whatsapp.com/send?phone=553534382399" target="_blank">WhatsApp</a>
+      </li>
+    </ul>
+
+    <h2 class="link-list-title">Nossas acomodações</h2>
+    <ul class="links-list">
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/acomodacao/chale-superior-com-piscina/7709132"
+          target="_blank">Chalé Superior com Piscina</a>
+      </li>
+
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/acomodacao/chale-prime/7709133" target="_blank">Chalé Prime</a>
+      </li>
+
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/acomodacao/chale-exclusive/7709137" target="_blank">Chalé
+          Exclusive</a>
+      </li>
+
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/acomodacao/chale-luxo-com-hidro/7709140" target="_blank">Chalé
+          Luxo com Hidro</a>
+      </li>
+
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/acomodacao/suite-deluxe-hidro/7709141" target="_blank">Suíte
+          Luxo</a>
+      </li>
+
+      <li>
+        <a href="https://pousadavillamonteverde.com.br/acomodacao/suite-master/7709143" target="_blank">Suíte Master</a>
+      </li>
+    </ul>
+  </main>
+
+  <script>
+    (function () {
+      const today = new Date();
+      const formatedToday = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+      let tomorrow_ms = new Date(today);
+      tomorrow_ms = tomorrow_ms.setDate(tomorrow_ms.getDate() + 1);
+      const tomorrow = new Date(tomorrow_ms);
+      const formatedTomorrow = `${tomorrow.getFullYear()}-${tomorrow.getMonth() + 1}-${tomorrow.getDate()}`;
+      const bookingUrl = `https://pousadavillamonteverde.com.br/search/${formatedToday}/${formatedTomorrow}/2`;
+      const bookingUrlElement = document.querySelector("#booking_url");
+      bookingUrlElement.href = bookingUrl;
+    })();
+  </script>
+</body>
+
+</html>

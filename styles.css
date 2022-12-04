@@ -1,0 +1,72 @@
+:root {
+  --color-light: #F6F8FD;
+  --color-main: #0F2353;
+  --color-dark: #050B1A;
+  --color-gold: #D6B250;
+  --font-title: "EB Garamond", serif;
+  --font-body: Oxygen, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background: var(--color-dark);
+  font-family: var(--font-body);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 24px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.links-list a {
+  background: var(--color-gold);
+  border-radius: 8px;
+  color: var(--color-dark);
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 150ms;
+  width: 100%;
+}
+
+.links-list a:hover {
+  transform: scale(1.02);
+}
+
+.link-list-title {
+  color: var(--color-light);
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-weight: 400;
+  margin: 64px 0 24px 0;
+  text-align: center;
+}
